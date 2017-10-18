@@ -17,10 +17,19 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "styles": [
-        "styles.scss"
-      ],
-      "scripts": [],
+        "styles": [
+        "styles/styles.css",
+        "styles/imagehover.min.css",
+        "styles/bootstrap.css",
+        "styles/progress-circle.css",
+        "styles/parallax.css",
+        "styles/chat-bubbles.css"],
+      "scripts": [ "assets/js/fontawesome.js",
+                    "assets/js/v4-shims.js",
+                    "assets/js/packs/light.js",
+                    "assets/js/packs/regular.js",
+                    "assets/js/packs/brands.js",
+                    "assets/js/packs/solid.js"],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
