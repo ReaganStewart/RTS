@@ -1,0 +1,13 @@
+.masthead {
+  background: rgba(44, 62, 80, 1.0) !important;
+  color: #cacacc !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9000;
+
+  .navbar {
+    background: rgba(44, 62, 80,1.0) !important;
+  }
+}

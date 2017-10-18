@@ -1,0 +1,18 @@
+
+<div *ngIf="job" >
+  <div>
+    <h2>details</h2>
+    <div>
+      <label>Project Details</label>
+      <p>{{ job.details }}</p>
+
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+      <div class="float-right"></div>
+      <div [ngClass]="setDevClasses(job.DesignTime)"><span>{{job.DesignTime}}</span></div>
+      <div [ngClass]="setDevClasses(job.DevTime)"><span>{{job.DevTime}}</span></div>
+    </div>
+  </div>
+</div>

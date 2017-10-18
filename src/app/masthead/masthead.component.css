@@ -1,0 +1,12 @@
+.masthead {
+  background: #2c3e50 !important;
+  color: #cacacc !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9000; }
+  .masthead .navbar {
+    background: #2c3e50 !important; }
+
+/*# sourceMappingURL=masthead.component.css.map */

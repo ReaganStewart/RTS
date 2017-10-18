@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { MastheadComponent } from './masthead/masthead.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EAAE,OAAO,EAAE,eAAe",
+"sources": ["job-detail.component.scss"],
+"names": [],
+"file": "job-detail.component.css"
+}

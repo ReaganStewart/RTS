@@ -1,0 +1,66 @@
+<div class="about">
+
+<!-- About me Jumbotron -->
+<div class="jumbotron jumboME">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="rounded-circle img-fluid float-left" src="assets/img/me.jpg" style="height:5rem; width:5rem;">
+      </div>
+      <div class="col-sm-6 text-center">
+        <h1 class="display-4">{{title}}</h1>
+      </div>
+      <div class="col-sm-3">
+        <label>Please download a copy of my resume.</label>
+        <form class="form-inline">
+          <select  type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" >
+            <option selected>Select File Format</option>
+            <option value="1">Word</option>
+            <option value="2">PDF</option>
+            <option value="3">text</option>
+          </select>
+          <button type="submit" class="btn btn-outline-dark">Download</button>
+        </form>
+      </div>
+    </div>
+    <blockquote class="blockquote">
+      <p class="mb-0"> Below you will see a history of projects that I have worked on during my career.</p>
+    </blockquote>
+  </div>
+</div>
+  <div class="vContainer">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+      <source src="assets/vid/Love-Coding/MP4/Love-Coding.mp4" type="video/mp4">
+    </video>
+    <div>
+      <div class="container-fluid my-timeline-container">
+
+        <div class="timeline">
+          <div *ngFor="let job of jobs; let index=index; let odd=odd; let even=even;"
+               [class.selected]="job === selectedJob"
+               [ngClass]="{ rightContainer:odd , leftContainer:even }"
+               class="blkContainer">
+            <div class="content">
+              <div class="job-date">
+                <p> <em>{{ job.startdate }}</em> / <em>{{job.enddate}}</em></p>
+              </div>
+              <div class="logo">
+                <span [ngClass]="job.id "></span>
+              </div>
+              <div class="job-info">
+                <h2>{{job.name}}</h2>
+                <p>{{job.title}}</p>
+              </div>
+              <button type="button" (click)="onSelect(job)" class="btn btn-link">Project Details</button>
+              <div  class="row" >
+                <app-job-detail [job]="selectedJob"></app-job-detail>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
+    </div>
+  </div>
+
+
+</div>
