@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html {
+ overflow: hidden;
+}
+body {
+  font-family: 'Comfortaa', cursive !important;
+  background-color:rgba(13,82,122,.1) !important;
+  width: 100%
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+footer .pageFooter{
+   background-color:  #343a40 !important;
+   color:#cacacc!important;
+   height:65px;
+}
